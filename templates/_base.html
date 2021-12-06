@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/styles.css">
+        <!-- <link rel="stylesheet" href="/static/likescreen.css"> -->
+        <link rel = "stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>        
+        <!-- <link rel="stylesheet" href="homepage.css"> -->
+        <title>Clinder</title>
+    </head>
+    <body>
+        <header>
+            <!-- Brand -->
+            <div class = "logo">
+            <a href="https://fontmeme.com/calligraphy-fonts/"><img src="https://fontmeme.com/permalink/211101/de6620630a8fec2d21b46022414aebd0.png" alt="calligraphy-fonts" border="0"></a>   
+            </div>
+      
+          <nav class="navbar navbar-expand-md">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="profile_screen.html">Profile Screen</a>
+                </li>
+                <li class="nav-item">
+                  <a href="like_screen.html">Liked Items</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </body>
+</html>

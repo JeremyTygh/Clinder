@@ -1,0 +1,253 @@
+/* .topInterface {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: white;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.clinderInterface {
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.loaded.clinderInterface {
+  opacity: 1;
+}
+
+.clinderInterface--cards {
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.clinderInterface--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 60vh;
+  background: white;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.moving.clinderInterface--card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.clinderInterface--card img {
+  max-width: 100%;
+}
+
+.clinderInterface--card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+.clinderInterface--likeButtons {
+  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.clinderInterface--likeButtons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 8px;
+  overflow: hidden;
+}
+
+.clinderInterface_dislike {
+  font-size: 35px;
+  color: grey;
+}
+
+.clinderInterface_like {
+  font-size: 30px;
+  color: red;
+} */
+
+.topInterface {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5vh;
+}
+
+/*Card */
+.card {
+  font-size: 14px;
+  line-height: 200px;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  /* display: block; */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #666;
+  -webkit-transform-origin: 50% 99%;
+  transform-origin: 50% 99%;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.cardcontainer {
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.cardinterface {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+/* List */
+.list .cardlist {
+  margin: 0;
+  padding: 0;
+}
+.clinder .list .card {
+  display: none;
+}
+.clinder .list .current {
+  display: block;
+}
+
+/* Buttons */
+
+.but-dislike,
+.but-like,
+.nopes,
+.yays {
+  display: none;
+}
+
+.clinder .but-dislike,
+.clinder .but-like,
+.clinder .nopes,
+.clinder .yays {
+  display: inline-block;
+}
+
+.cardcontainer button {
+  background: #0c0;
+  border: none;
+  color: #fff;
+  border-radius: 50% 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 1.5em;
+  display: inline-block;
+}
+.cardcontainer button:focus {
+  outline: 0;
+  background: #0f0;
+}
+.cardcontainer .but-dislike {
+  background: #c00;
+}
+.cardcontainer .but-dislike:focus {
+  outline: 0;
+  background: #f00;
+}
+
+.clinder .cardcontainer.yes .card {
+  -webkit-animation: yay 0.7s ease-out;
+  animation: yay 0.7s ease-out;
+}
+.clinder .cardcontainer.nope .card {
+  -webkit-animation: nope 0.7s ease-out;
+  animation: nope 0.7s ease-out;
+}
+
+/*
+  Animations
+*/
+
+@keyframes yay {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes yay {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@keyframes nope {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes nope {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: rotate(-40deg) translateY(-80px);
+    opacity: 0;
+  }
+}

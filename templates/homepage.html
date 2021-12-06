@@ -1,0 +1,99 @@
+
+  
+<!-- <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Clinder</title>
+        <link rel = "stylesheet" href = "homepage.css"> 
+    </head>
+    <body>
+        <div class = "topInterface">
+            <h1>Clinder</h1>
+        </div>
+
+        <script type="text/javascript" src="homepage.js"></script>
+        
+        <div class = clinderInterface>
+            
+            <div class = "clinderInterafce--cards">
+                <div class="clinderInterface--card">
+                    <img src="pants.jpg">
+                    <p>Bob's pants</p>
+                </div>
+                
+                <div class="clinderInterface--card">
+                    <img src="charlie.jpg">
+                    <p>Chuck's shirt</p>
+                </div>
+                
+            </div>
+
+            <div class = "clinderInterface--likeButtons">
+                <button id="dislike">&#x2715;</button>
+                <button id="like">&#x2665;</button>
+            </div>
+        </div>  
+        
+        
+       
+        
+        
+    </body>
+</html> 
+   -->
+   {% extends '_base.html' %}
+   {% block content %}
+
+    <body>
+        <!-- <div class = "topInterface">
+            <h1>Clinder</h1>
+        </div> -->
+
+        <div class="cardinterface">
+            <div class="cardcontainer list">
+                <ul class="cardlist">
+                <li class="clinderCard current">
+                    <!-- <img id = "image" src="https://12ax7web.s3.amazonaws.com/accounts/1/products/1986199879943/Ramen-Panda-tahiti-blue-light-t-shirt-teeturtle-full-21-1000x1000.jpg"
+                    alt="Panda shirt"> -->
+                    <img id = "image" alt = "0" src= "{{clothes[0].image}}"
+                    >
+                </li>
+                <!-- <li class="card">
+                    <img id = "image" src="https://cdn.vox-cdn.com/thumbor/Fbfiqf2aaU_cfUo3ANbwCVOKa5c=/0x0:3575x4469/1720x0/filters:focal(0x0:3575x4469):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22975804/Jersey.jpeg"
+                    alt="Sixers Jersey">
+                </li> -->
+                <li class="clinderCard">
+                    <img id = "image"  alt = "1" src= "{{clothes[1].image}}"
+                    >
+                </li>
+                <li class="clinderCard">
+                    <img id = "image" alt = "2" src= "{{clothes[2].image}}"
+                    >
+                </li>
+                <li class="clinderCard">
+                    <img id = "image" alt = "3" src= "{{clothes[3].image}}"
+                    >
+                </li>
+                <li class="clinderCard">
+                    <img id = "image" alt = "4" src= "{{clothes[4].image}}"
+                    >
+                </li>
+                <li class="clinderCard">
+                    <img id = "image" alt = "5" src= "{{clothes[5].image}}"
+                    >
+                </li>
+                </ul>
+                    <button class="but-dislike">NO</button>
+                    <button class="but-like">YES</button>
+            </div>
+        </div>
+        <script src="/static/homepage.js"></script>
+
+    </body> 
+
+    {% endblock %}
+  
+
+
+

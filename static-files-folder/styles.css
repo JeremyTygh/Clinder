@@ -1,0 +1,488 @@
+.PhoneBackground {
+    background-image: url("https://preview.pixlr.com/images/800wm/1062/1/1062100171.jpg");
+    background-size: 600px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid;
+    color: black;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  
+  /* .topInterface {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5vh;
+  } */
+  
+  .Profile-Pic-Container {
+    width: 420px;
+    height: 690px;
+    border: 1px solid black;
+    margin: 40px auto 0 auto;
+    position: relative;
+  }
+  
+  .Picture {
+    height: 55%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .May {
+    height: 100%;
+    position: absolute;
+    left: -112px;
+  }
+  
+  .name-box {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+  }
+  
+  h2 {
+    padding-top: -0px;
+    padding-left: 20px;
+    color: #454344;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin: 0;
+    margin-top: 10px;
+    color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .age {
+    padding-left: 6px;
+    font-weight: 200;
+  }
+  
+  .dots-up {
+    position: absolute;
+    transform: rotate(90deg);
+    fill: #fe4f68;
+    right: 10px;
+    top: -4px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(transparent, white 60%);
+    bottom: 6px;
+    text-align: center;
+  }
+  
+  .Circle-Zone {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  #Profile {
+    background-color: gray;
+    float: left;
+    margin-left: 20px;
+  }
+  
+  /*#Profile-Link {
+        width: 24;
+        height: 24;
+        background-color: #FE4F68;
+    }*/
+  
+  #Home {
+    background-color: grey;
+  }
+  
+  #Liked {
+    background-color: grey;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .back {
+    fill: white;
+    padding-top: 10px;
+    padding-right: 6px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .star {
+    fill: white;
+    padding-top: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .heart {
+    fill: white;
+    padding-top: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  
+/* START OF LIKESCREEN CSS... */
+
+.Phone-Zone{
+    width: 420px;
+    height: 650px;
+    border: 1px solid black;
+    margin: 40px auto 0 auto;
+    position: relative;
+  }
+  
+  /*Card */
+  .clinderCard {
+    font-size: 14px;
+    line-height: 200px;
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    /* display: block; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #666;
+    -webkit-transform-origin: 50% 99%;
+    transform-origin: 50% 99%;
+  }
+  
+  .clinderCard img {
+    max-width: 100%;
+  }
+  
+  .cardcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  .cardinterface {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  
+  /* List */
+  .list .cardlist {
+    margin: 0;
+    padding: 0;
+  }
+  .clinder .list .clinderCard {
+    display: none;
+  }
+  .clinder .list .current {
+    display: block;
+  }
+  
+  /* Buttons */
+  
+  .but-dislike,
+  .but-like,
+  .nopes,
+  .yays {
+    display: none;
+  }
+  
+  .clinder .but-dislike,
+  .clinder .but-like,
+  .clinder .nopes,
+  .clinder .yays {
+    display: inline-block;
+  }
+  
+  .cardcontainer button {
+    /* background: #0c0; */
+    border: none;
+    color: #fff;
+    border-radius: 50% 50%;
+    width: 40px;
+    height: 40px; 
+    line-height: 30px;
+    
+    /* margin: 0 .5em; */
+    display: inline-block;
+    /* position: absolute; */
+    /* bottom: 170px;
+
+    padding: 20px; */
+    /* text-align: center; */    
+  }
+  .cardcontainer button:focus {
+    outline: 0;
+    background: rgb(19, 168, 19);
+  }
+  .cardcontainer .but-dislike {
+    background: #c00;
+    
+    /* left: 650px; */
+  }
+  .cardcontainer .but-like {
+    background: rgb(9, 124, 9);
+    
+    /* left: 750px; */
+  }  
+  .cardcontainer .but-dislike:focus {
+    outline: 0;
+    background: #f00;
+  }
+  
+  .clinder .cardcontainer.yes .clinderCard {
+    -webkit-animation: yay 0.7s ease-out;
+    animation: yay 0.7s ease-out;
+  }
+  .clinder .cardcontainer.nope .clinderCard {
+    -webkit-animation: nope 0.7s ease-out;
+    animation: nope 0.7s ease-out;
+  }
+  
+  /*
+    Animations
+  */
+  
+  @keyframes yay {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(40deg) translateY(-80px);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes yay {
+    from {
+      -webkit-transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: rotate(40deg) translateY(-80px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes nope {
+    from {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(-40deg) translateY(-80px);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes nope {
+    from {
+      -webkit-transform: rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: rotate(-40deg) translateY(-80px);
+      opacity: 0;
+    }
+  }
+
+ /* START OF LIKESCREEN CSS... */
+    
+
+h1{
+    text-align: center;
+    font-family: Basetica Medium;
+    padding-top: 10px;
+  
+  }
+  
+  .card {
+      font-family: Basetica Medium;
+  } 
+  
+  
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  button {
+    color: white;
+  }
+  header {
+    background: #000;
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    float: left;
+    padding: 20px 0;
+    padding-left: 50px;
+  }
+  
+  nav {
+    float: right;
+    padding-right: 20px;
+    
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: rgb(126, 125, 125);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(138, 138, 138);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+  
+  .carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;    
+      display: table;
+    }
+    
+    
+    .carousel {
+      transform-style: preserve-3d;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .carousel__photo {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top:0;
+      margin: auto;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      padding: 5px;;
+      padding-top: 20px;
+      z-index: 100;
+  
+      overflow: hidden;
+    }
+    
+    .carousel__photo.initial,
+    .carousel__photo.active {
+      opacity: 1;
+      position: relative;
+      z-index: 900;
+    }
+    
+    .carousel__photo.prev,
+    .carousel__photo.next {
+      z-index: 800;
+    }
+    .carousel__photo.prev {
+      transform: translateX(-100%); /* Move 'prev' item to the left */
+    }
+    .carousel__photo.next {
+      transform: translateX(300%); /* Move 'next' item to the right */
+    }
+    
+    .carousel__button--prev,
+    .carousel__button--next {
+      position: absolute;
+      top:50%;
+      width: 3rem;
+      height: 3rem;
+      background-color: #FFF;
+      border-radius: 50%;
+      cursor: pointer; 
+      z-index: 1001; /* Sit on top of everything */
+      border: 1px solid black;
+    }
+    .carousel__button--prev {
+      left:0;
+    }
+    .carousel__button--next {
+      right: 0;
+    }
+    
+    .carousel__button--prev::after,
+    .carousel__button--next::after {
+      content: " ";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      left: 54%;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+    
+    .carousel__button--next::after {
+      left: 47%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  

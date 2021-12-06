@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+{% block content %}
+    <body>
+        <div class = "Profile-Pic-Container">
+            <div class = "Picture">
+            <img class = "May" src = "https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg?size=626&ext=jpg">
+            </div>
+            <div class = "name-box">
+                <h2>May, <span class="age"> 24</span></h2>
+                <svg class="dots-up" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z"></path>
+                  </svg>
+            </div>
+            <div class="info">
+                <p>I love cool and comfortable clothing. Anything with bright colors and flowery design</p>
+            </div>
+            <div class = "footer">
+                <div class = "Circle-Zone" id = "Profile">
+                    <a href="file:///C:/Users/lukej/Dropbox/My%20PC%20(LAPTOP-MECDJ56U)/Downloads/CS%201520/CS1520-Clothes-Tinder/Profile%20Screen.html">
+                    <img class = "back" width="24" height="24" viewBox = "0 0 24 24" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                    <!--<svg class = "back" width = "24" height = "24" viewBox = "0 0 24 24">
+                        <path d = "M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12"></path>
+                    </svg>-->
+                    </a>
+                </div>
+                <div class = "Circle-Zone" id = "Home">
+                    <img class = "star" width="24" height="24" viewBox = "0 0 24 24" src="data:image/png;base64,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">
+                   <!-- <svg class = "star" width = "24" height = "24" viewBox = "0 0 24 24">
+                        <path d = "M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path>
+                    </svg>-->
+                </div>
+                <div class="circle" id = "Liked">
+                    <svg class="heart" width = "24" height = "24" viewBox = "0 0 24 24">
+                        <path d = "M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}
