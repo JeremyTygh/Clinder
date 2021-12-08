@@ -85,4 +85,6 @@ h1{
     right: auto;
     bottom: auto;
 }
-.card {display:inline-block;}
+.card {
+  display:inline-block;
+}
