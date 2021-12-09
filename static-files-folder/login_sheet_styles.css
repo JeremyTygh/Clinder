@@ -1,72 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
+@import "bourbon";
+
+body {
+	background: #eee !important;	
 }
 
-.main{
-    height: 100%;
-    width: 100%;
-    background-color: pink;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
 }
 
-.box{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
 }
 
-.button-box{
-    width: 220px;
-    height: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
-    border-radius: 30px;
-}
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
 
-.input-group{
-    top: 180px;
-    position: absolute;
-    width: 280px;
-    transition: 0.5s;
-}
+	.checkbox {
+	  font-weight: normal;
+	}
 
-.input-field{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 1px solid#999;
-    outline: none;
-    background: transparent;
-}
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+      @include box-sizing(border-box);
+	}
 
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background-color: pink;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
 
-.check-box{
-    margin: 30px 10px 30px 0;
-}
-
-span{
-   color: #777;
-   font-size: 12px;
-   bottom: 68px;
-   position: absolute;
-}
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
