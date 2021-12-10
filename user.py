@@ -1,4 +1,5 @@
 from google.cloud import datastore
+from dataclasses import dataclass
 
 class Clothing():
     """An object to hold clothing"""
@@ -10,7 +11,11 @@ class Clothing():
     def __str__(self):
         return '%s %s' % (self.image, self.style)
 
+@dataclass
 class User():
+    name: str
+    likes: list
+    index: int=0
     """An object to hold users"""
     def __init__(self, name="admin", index=0):
         self.name = name
@@ -46,5 +51,3 @@ class User():
         toUpload = datastore.Entity(key)
         toUpload['index'] = self.index
         client.put(toUpload)
-
-
